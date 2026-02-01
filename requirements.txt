@@ -1,0 +1,9 @@
+fastapi
+polars
+sentence-transformers
+scikit-learn
+numpy
+youtube_transcript_api
+requests
+python-dotenv
+fastapi[standard]
