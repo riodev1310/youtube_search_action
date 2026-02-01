@@ -1,9 +1,11 @@
 name: data-pipeline-workflow
 
 on:
-  schedule:
-    - cron: "35 0 * * *" # run every day at 12:35 AM
-  workflow_dispatch:  # manual triggers
+  push:
+    paths:
+      - "app/data/**"   # data changed
+  
+  workflow_dispatch:
 
 jobs:
   run-data-pipeline:
